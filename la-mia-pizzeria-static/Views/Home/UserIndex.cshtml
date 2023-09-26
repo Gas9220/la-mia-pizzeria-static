@@ -13,7 +13,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar bg-secondary">
+        <nav class="navbar bg-danger">
             <div class="container-fluid">
                 <a class="navbar-brand text-white" href="#">
                     <img src="https://previews.123rf.com/images/simmmax/simmmax1510/simmmax151000004/46552202-pizza-delivery-logo-fast-delivery-logo-pizza-logo.jpg" alt="Logo" width="35" height="35" class="d-inline-block align-text-top rounded-5">
@@ -22,13 +22,13 @@
                 <ul class="navbar-bar d-flex ms-auto mb-2 mb-lg-0 list-unstyled">
                     <li class="nav-item">
                         <a class="nav-link text-white" href="/Home/Index">
-                            <span>Admin</span>
+                            Admin
                         </a>
 
                     </li>
                     <li class="nav-item ms-3">
                         <a class="nav-link text-white" href="/Home/UserIndex">
-                            <span>User</span>
+                            User
                         </a>
                     </li>
                 </ul>
@@ -38,7 +38,41 @@
     </header>
 
     <main>
-        <h1>User view</h1>
+        <div class="container-fluid">
+            <h1>Choose a pizza</h1>
+            <div class="row mt-2">
+                <div class="col-4 d-flex justify-content-center">
+                    <div class="card h-100 border-5 border-danger" style="width: 18rem;">
+                        <img src="~/img/margherita.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Margherita</h5>
+                            <p class="card-text">Pomodoro, mozzarella.</p>
+                            <a href="#" class="btn btn-danger">Buy for 6€</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 d-flex justify-content-center">
+                    <div class="card h-100 border-5 border-danger" style="width: 18rem;">
+                        <img src="~/img/marinara.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Marinara</h5>
+                            <p class="card-text">Pomodoro, origano, aglio.</p>
+                            <a href="#" class="btn btn-danger">Buy for 5€</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4 d-flex justify-content-center">
+                    <div class="card h-100 border-5 border-danger" style="width: 18rem;">
+                        <img src="~/img/diavola.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Diavola</h5>
+                            <p class="card-text">Pomodoro, mozzarella, salame piccante.</p>
+                            <a href="#" class="btn btn-danger">Buy for 8€</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
